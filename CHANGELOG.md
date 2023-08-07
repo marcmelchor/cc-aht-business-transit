@@ -16,3 +16,4 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Integration with database
+- README file.
