@@ -9,3 +9,10 @@ All notable changes to this project will be documented in this file.
 
 - Create endpoint `/sink-data`.
 - Establish the connection the psql database.
+
+
+## [0.1.0] --2023-08-07
+
+### Added
+
+- Integration with database

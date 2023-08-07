@@ -4,7 +4,7 @@ import { environment } from '../environments/environment';
 export const isAllowed = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
   try {
     const authHeaderToken: string | undefined = req.headers.authorization;
-    const autSinkToken: string = `Bearer ${environment.transportAndLoadToken}`;
+    const autSinkToken: string = `Bearer ${environment.businessTransitToken}`;
     if (!authHeaderToken || authHeaderToken !== autSinkToken) {
       return res.status(403).json({message: 'Unauthorized to consume endpoint'});
     }
