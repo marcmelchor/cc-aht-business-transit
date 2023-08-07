@@ -1,6 +1,6 @@
 {
   "name": "cc-aht-business-transit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "In the EtLT Process Flow, this is the Business Layer where the 'Mini Transform and Load' and the 'Transform' consume it in the EtLT-DAG",
   "main": "index.js",
   "scripts": {

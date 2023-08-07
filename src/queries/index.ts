@@ -9,3 +9,9 @@ export async function postBloodDonor(data: Producer): Promise<QueryResult> {
     'INSERT INTO donors(donor_id, type, rh_factor, blood_group, username) VALUES ($1, $2, $3, $4, $5)',
     [data.id, data.type, data.rh_factor, data.group, data.username]);
 }
+
+export async function getBloodDonorByType(type?: string): Promise<QueryResult> {
+  return await pool.query(
+    'SELECT * FROM donors WHERE type = $1',
+    [type]);
+}
